@@ -25,7 +25,9 @@ int main()
         printf("4. The Duck Parade\n");
         printf("5. The Mystery of the Repeated Digits\n");
         printf("6. Good Night Ducks\n");
-        scanf("%d", &choice);
+        if (scanf("%d", &choice) != 1) {
+             return 0;   // End of input → safely exit to avoid timeout
+        }
 
         // Execute the task based on the user's choice
         switch (choice) {
