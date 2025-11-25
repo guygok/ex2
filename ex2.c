@@ -149,7 +149,7 @@ int main()
             // Get a valid positive number of ducks
             printf("please enter number of ducks:\n");
             scanf("%d", &ducks);
-            while (ducks <= 0) {
+            while (ducks < 0) {
                 printf("Invalid number, please try again\n");
                 scanf("%d", &ducks);
             }
